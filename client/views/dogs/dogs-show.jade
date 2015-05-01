@@ -1,1 +1,9 @@
-h3 SHOW DOG
+h3 {{dog.name}}
+
+.row
+  .col-xs-4
+    img.img-reponsive(ng-src='{{dog.photo}}')
+  .col-xs-8
+    ul
+      li Age: {{dog.age}}
+      li Sex: {{dog.sex}}
