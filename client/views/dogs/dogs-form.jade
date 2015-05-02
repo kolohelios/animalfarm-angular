@@ -1,0 +1,18 @@
+.row
+  .col-xs-3
+    form(name='newDogForm' novalidate)
+      .form-group
+        label(for='name') Name
+        input.form-control(type='text' name='name' ng-model='dog.name')
+      .form-group
+        label(for='age') Age
+        input.form-control(type='number' name='age' ng-model='dog.age')
+      .form-group
+        label(for='sex') Sex
+        select.form-control(name='sex' ng-model='dog.sex')
+          option male
+          option female
+      .form-group
+        label(for='photo') Photo
+        input.form-control#photo(type='url' name='photo' ng-model='dog.photo')
+      

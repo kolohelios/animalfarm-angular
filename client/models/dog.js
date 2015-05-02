@@ -26,6 +26,10 @@ angular.module('animalfarm')
     return $http.delete(nodeUrl + '/dogs/' + dogId);
   };
 
+  Dog.update = function(dogId, dog){
+    return $http.put(nodeUrl + '/dogs/' + dogId + '/edit', dog);
+  };
+
   return Dog;
 
 });
